@@ -4,6 +4,6 @@
 
 <div ng-repeat="category in categories">
     <p>
-        <button type="button" class="btn btn-lg btn-default">{{ category.name }}</button>
+        <button ng-click="listIssues(category.name)" type="button" class="btn btn-lg btn-default">{{ category.name }}</button>
     </p>
 </div>

@@ -1,6 +1,6 @@
 'use strict;';
 
-npRefer.controller('MainController', function($scope){
+npRefer.controller('MainController', function($scope, $location){
     $scope.begin = 'Get started';
 
     $scope.categories = [
@@ -36,4 +36,8 @@ npRefer.controller('MainController', function($scope){
             name: "Housing",
             issues: ["Protect affordable housing"]
         }];
+
+    $scope.listIssues = function(category) {
+        $location.path("/category/" + category);
+    };
 });

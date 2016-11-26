@@ -7,9 +7,14 @@ var npRefer = angular.module('npRefer', ['ngRoute'])
                 templateUrl: "templates/start.html",
                 controller: "MainController"
             })
-            .when("issue", {
-                templateUrl: "templates/issue.html",
+            .when("/category/:categoryname", {
+                templateUrl: "category.html",
+                controller: "CategoryController"
+            })
+            .when("/issue/:issuename", {
+                templateUrl: "issue.html",
                 controller: "IssueController"
             })
-            .otherwise({redirectTo: "/main"});
+            //.otherwise({redirectTo: "/main"})
+        ;
     });
