@@ -18,18 +18,22 @@ npRefer.controller('MainController', function($scope){
         },
         {
             name: "Immigration",
-            issues: ["Protections for dreamers", "Protections for refugees", "Protections for mulsim immigrants"]},
+            issues: ["Protections for dreamers", "Protections for refugees", "Protections for mulsim immigrants"]
+        },
         {
             name: "Human Rights",
-            issues: ["Equality for minorities", "Equality for LGBT americans "]},
+            issues: ["Equality for minorities", "Equality for LGBT americans "]
+        },
         {
             name: "Environment",
-            issues: ["Climate Change"]},
+            issues: ["Climate Change"]
+        },
         {
             name: "Healthcare",
-            issues: ["Protect the ACA"]},
+            issues: ["Protect the ACA"]
+        },
         {
             name: "Housing",
-            issues: ["Protect affordable housing"]}
-        ];
+            issues: ["Protect affordable housing"]
+        }];
 });
