@@ -7,5 +7,9 @@ var npRefer = angular.module('npRefer', ['ngRoute'])
                 templateUrl: "templates/start.html",
                 controller: "MainController"
             })
+            .when("issue", {
+                templateUrl: "templates/issue.html",
+                controller: "IssueController"
+            })
             .otherwise({redirectTo: "/main"});
     });
